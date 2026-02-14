@@ -1,0 +1,92 @@
+/* ==========================================
+   3D DESIGN PAGE
+========================================== */
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #2c1f1f, #5e3b3b);
+    color: #f5f1e8;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+h1 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+h2 {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+p {
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+/* ===== Gallery Layout ===== */
+
+.gallery-top {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.gallery-top img {
+    width: 70%;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.4);
+    transition: 0.4s ease;
+}
+
+.gallery-bottom {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.gallery-bottom img {
+    width: 35%;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.4);
+    transition: 0.4s ease;
+}
+
+.gallery-top img:hover,
+.gallery-bottom img:hover {
+    transform: translateY(-12px) scale(1.05);
+}
+
+/* ===== Back Button ===== */
+
+.back-btn {
+    display: inline-block;
+    margin-top: 3rem;
+    padding: 10px 20px;
+    border: 2px solid #f5f1e8;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #f5f1e8;
+    transition: 0.3s ease;
+}
+
+.back-btn:hover {
+    background: #f5f1e8;
+    color: #2c1f1f;
+}
+
+/* ===== Fade Animation ===== */
+
+.fade {
+    opacity: 0;
+    transform: translateY(20px);
+}

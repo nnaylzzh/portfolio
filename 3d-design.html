@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3D Design | Nayla</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- CSS KHUSUS 3D -->
+    <link rel="stylesheet" href="3d-design.css">
+</head>
+
+<body>
+
+<section class="project-detail">
+    <div class="container">
+        <h1 class="fade">3D Design</h1>
+
+        <h2 class="fade">Gallery</h2>
+
+        <!-- 1 FOTO ATAS -->
+        <div class="gallery-top fade">
+            <img src="assets/design1.jpeg" alt="3D Design 1">
+        </div>
+
+        <!-- 2 FOTO BAWAH -->
+        <div class="gallery-bottom fade">
+            <img src="assets/design2.jpeg" alt="3D Design 2">
+            <img src="assets/design3.jpeg" alt="3D Design 3">
+        </div>
+
+        <h2 class="fade">Project Overview</h2>
+        <p class="fade">
+            This 3D design project explores depth, lighting, and spatial composition
+            to create immersive and visually dynamic digital artwork.
+        </p>
+
+        <h2 class="fade">Tools Used</h2>
+        <ul class="fade">
+            <li>Blender</li>
+            <li>Figma</li>
+            <li>Adobe Illustrator</li>
+        </ul>
+
+        <a href="index.html" class="fade back-btn">← Back to Portfolio</a>
+    </div>
+</section>
+
+<script>
+    const elements = document.querySelectorAll(".fade");
+
+    window.addEventListener("load", () => {
+        elements.forEach((el, index) => {
+            setTimeout(() => {
+                el.style.transition = "all 0.6s ease";
+                el.style.opacity = 1;
+                el.style.transform = "translateY(0)";
+            }, index * 200);
+        });
+    });
+</script>
+
+</body>
+</html>
